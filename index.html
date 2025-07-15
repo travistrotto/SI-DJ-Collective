@@ -4,66 +4,184 @@
 <head>
     <title>DJ Collective</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Marcellus&display=swap');
+
+
         body {
             background-color: black;
+            color: white;
+            font-family: 'Cormorant Garamond', serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        a {
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .logo {
+            margin-top: 3rem;
+            font-family: 'Marcellus', serif;
+            font-size: 2rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+
+
+        .section-title {
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+
+        .preview-next-event img {
+            width: 45%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        .preview-next-event p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .preview-details {
+            line-height: 15px;
+        }
+
+        .secondary-font {
+            font-family: 'Marcellus', serif;
+        }
+
+        .preview-next-event a {
             color: white;
             text-decoration: none;
         }
 
-        ul {
-            list-style: none;
+        .tickets-label {
+            text-decoration: underline;
+            font-size: 0.95rem;
         }
 
-        footer {}
+        .menu {
+            margin-top: 4rem;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        .menu li {
+            font-size: 1rem;
+            letter-spacing: 0.15em;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 6rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            opacity: 0.5;
+        }
+
+        .caps {
+            text-transform: uppercase;
+        }
+
+        .divider-line-dot {
+            position: relative;
+            height: 1px;
+            background-color: white;
+            margin: 1rem auto;
+            width: 100px;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            scale: 80%;
+        }
+
+        .divider-line-dot::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 4px;
+            height: 4px;
+            background-color: white;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 
 <body>
-    <!-- Collective Name -->
-    <div class="logo">
+    <div class="container">
+        <!-- Collective Name -->
+        <div class="logo">Island Sound Culture</div>
 
-    </div>
-    <!-- Box containing image and next event details-->
-    <div class="preview-next-event">
-        <img src="">
-        <p>DATE, EVENT NAME</p>
-        <p>location</p> <!-- Italic -->
-    </div>
-    <!-- Menu -->
-    <div class="menu">
-        <ul>
-            <a href="">
-                <li>About Us</li>
+        <!-- Box containing image and next event details-->
+        <div class="preview-next-event">
+            <!-- Invisible full-area link -->
+            <a href="https://ra.co/events/2215833">
+                <p class="section-title">Next Event</p>
+                <img src="img/next.jpg" alt="Event Image">
+
+                <div class="preview-details">
+                    <p class="caps secondary-font">July 27, Gospel Night</p>
+                    <p><em>Elsewhere Rooftop, Brooklyn</em></p>
+                    <p class="tickets-label">Tickets</p>
+                </div>
             </a>
-        </ul>
-        <ul>
-            <a href="">
-                <li>DJs</li>
-            </a>
-        </ul>
-        <ul>
-            <a href="">
-                <li>Listen</li>
-            </a>
-        </ul>
-        <ul>
-            <a href="">
-                <li>Apply</li>
-            </a>
-        </ul>
-        <ul>
-            <a href="">
-                <li>Contact</li>
-            </a>
-        </ul>
+        </div>
+
+        <div class="divider-line-dot"></div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <ul>
+                <a href="#" class="caps">
+                    <li>Upcoming Events</li>
+                </a>
+
+                <a href="#">
+                    <li>DJs</li>
+                </a>
+                <a href="#" class="caps">
+                    <li>Listen</li>
+                </a>
+                <a href="#" class="caps">
+                    <li>Apply</li>
+                </a>
+                <a href="#" class="caps">
+                    <li>About Us</li>
+                </a>
+                <a href="#" class="caps">
+                    <li>Contact</li>
+                </a>
+        </div>
+        <div class="divider-line-dot"></div>
+        <!-- Footer -->
+        <footer>SENSE OF URGENCY</footer>
     </div>
 </body>
-<footer>
-</footer>
-<!-- Dark Grey: Icons Links to Social Media -->
-<!-- Copyright -->
 
 </html>
